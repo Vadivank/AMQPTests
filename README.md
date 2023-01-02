@@ -7,8 +7,9 @@ Before use examples:
 
 # Build examples
 ## Linux
-- Every dir has same `runfirst` for Conan install and CMake build
+- For first building every dir has same `runfirst` for Conan installs and CMake build
   - `chmod u+x ./runfirst.sh`
+  - use `./runfirst.sh`
 - For seconadary compile:
   - `chmod u+x ./run.sh`
   - and use `./run.sh`
