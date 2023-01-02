@@ -10,7 +10,7 @@ Before use examples:
 - Every dir has same `runfirst` for Conan install and CMake build
   - `chmod u+x ./runfirst.sh`
 - For seconadary compile:
-  - ``chmod u+x ./run.sh`
+  - `chmod u+x ./run.sh`
   - and use `./run.sh`
 
 ## Windows
