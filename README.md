@@ -8,7 +8,10 @@ Before use examples:
 # Build examples
 ## Linux
 - Every dir has same `runfirst` for Conan install and CMake build
-  - for seconadary compile project use `run`
+  - `chmod u+x ./runfirst.sh`
+- For seconadary compile:
+  - ``chmod u+x ./run.sh`
+  - and use `./run.sh`
 
 ## Windows
 - If need macros for build use files `run...` for make the macros
