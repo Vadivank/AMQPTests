@@ -10,13 +10,19 @@
 void task() {
     const std::string msg = "Hello World!";
 
+    // инициализация обработчика соединения
     AMQPHandler handler("localhost", 5672);
 
+    // инициализация соединения
     AMQP::Connection connection(&handler, AMQP::Login("guest", "guest"), "/");
+    
+    // инициализация канала
     AMQP::Channel channel(&connection);
 
+    // инициализация callback функции
     AMQP::QueueCallback callback = [&](const std::string& name, int msgcount,
                                        int consumercount) {
+        
         AMQP::Envelope env(msg.c_str(), msg.size());
         env.setDeliveryMode(2);
         channel.publish("", "task_queue", env);
